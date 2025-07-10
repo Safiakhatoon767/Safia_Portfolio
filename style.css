@@ -1,0 +1,248 @@
+/* style.css */
+
+:root {
+    --primary: #6a11cb;
+    --secondary: #2575fc;
+    --text: #1a1a1a;
+    --bg: #fefefe;
+    --white: #fff;
+    --card-bg: #ffffff;
+    --shadow: rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Navbar */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    font-size: 1.8rem;
+    background: linear-gradient(to right, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--primary);
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(to right, var(--primary), var(--secondary));
+    color: var(--white);
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    background: var(--white);
+    color: var(--primary);
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 4px 12px var(--shadow);
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #f0f0f0;
+}
+
+/* About */
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 60px 0;
+    align-items: center;
+}
+
+.about-img img {
+    width: 280px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px var(--shadow);
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: var(--primary);
+}
+
+.social-links a {
+    margin-right: 15px;
+    font-size: 1.6rem;
+    color: var(--primary);
+    transition: transform 0.3s;
+}
+
+.social-links a:hover {
+    transform: scale(1.2);
+}
+
+/* Projects */
+.projects {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 2.4rem;
+    margin-bottom: 30px;
+    color: var(--primary);
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px var(--shadow);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.project-card a {
+    display: inline-block;
+    margin: 8px 10px 0 0;
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Contact */
+.contact {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.contact a {
+    color: var(--secondary);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    background: var(--primary);
+    color: var(--white);
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Animations */
+.animate {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.animate.delay {
+    animation-delay: 0.5s;
+}
+
+.animate.delay2 {
+    animation-delay: 1s;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-img img {
+        width: 220px;
+    }
+
+    .hero h2 {
+        font-size: 2.2rem;
+    }
+
+    .btn {
+        padding: 10px 22px;
+    }
+}

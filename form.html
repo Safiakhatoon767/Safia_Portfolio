@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🚀 Safia Registration</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+
+    <div class="register-container">
+        <h2>📝 Create Your Account</h2>
+
+        <form id="registerForm" autocomplete="off">
+
+            <input type="email" id="email" placeholder="📧 Email Address" required />
+
+            <input type="tel" id="phone" placeholder="📱 Phone Number" required />
+
+            <div class="password-wrapper">
+                <input type="password" id="password" placeholder="🔒 Password" required />
+                <span class="toggle" id="togglePass">👁️</span>
+            </div>
+
+            <div class="password-wrapper">
+                <input type="password" id="confirmPassword" placeholder="🔒 Confirm Password" required />
+                <span class="toggle" id="toggleConfirm">👁️</span>
+            </div>
+
+            <div class="captcha-box">
+                <span id="captcha-text"></span>
+                <input type="text" id="captchaInput" placeholder="🔐 Enter Captcha" />
+            </div>
+
+
+            <div class="error" style="color:red; font-weight:bold; margin-top:10px;"></div>
+
+
+            <button type="submit" id="submitBtn">🚀 Register</button>
+        </form>
+    </div>
+
+    <script src="form.js"></script>
+</body>
+
+</html>

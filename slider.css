@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #1f4037, #99f2c8);
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.slider-container {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#slider {
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn {
+    background-color: #00c9a7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #007f6e;
+}

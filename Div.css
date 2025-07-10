@@ -1,0 +1,26 @@
+body {
+    background-color: chocolate;
+}
+
+#div_box {
+    width: 40%;
+    height: 50px auto;
+    padding: 20px;
+    border: 2px dashed black;
+    text-align: center;
+    padding-left: 50px;
+    margin: 0 auto;
+    margin-top: 200px;
+    background-color: gray;
+}
+
+.my_style {
+    color: yellowgreen;
+    font-size: 20px;
+    text-align: center;
+    padding-right: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-weight: 1000;
+
+}
