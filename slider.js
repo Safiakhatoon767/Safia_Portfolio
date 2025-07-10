@@ -15,7 +15,7 @@ window.onload = function () {
         if (currentIndex >= images.length) {
             currentIndex = 0;
         }
-        // slider.setAttribute("src", images[currentIndex]);
+        slider.setAttribute("src", images[currentIndex]);
     });
 
     document.querySelector("#prev").addEventListener("click", () => {
@@ -23,6 +23,6 @@ window.onload = function () {
         if (currentIndex < 0) {
             currentIndex = images.length - 1;
         }
-        // slider.setAttribute("src", images[currentIndex]);
+        slider.setAttribute("src", images[currentIndex]);
     });
 }
