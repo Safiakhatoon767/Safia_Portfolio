@@ -7,10 +7,10 @@ window.onload = function () {
 
     let currentIndex = 0;
 
-    let slider = document.querySelector("#slider");
+    let slider = document.querySelector('#slider');
     slider.setAttribute("src", images[currentIndex]);
 
-    document.querySelector("#next").addEventListener("click", () => {
+    document.querySelector('#next').addEventListener("click", () => {
         currentIndex++;
         if (currentIndex >= images.length) {
             currentIndex = 0;
